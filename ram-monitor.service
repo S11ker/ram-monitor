@@ -1,0 +1,13 @@
+[Unit]
+Description=RAM Usage Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart="PATH TO .SH SCRIPT"
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
